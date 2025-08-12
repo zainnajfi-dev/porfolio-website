@@ -1,0 +1,42 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#1f2937"/>
+  <rect x="50" y="50" width="500" height="300" rx="8" fill="#374151"/>
+  
+  <!-- Header -->
+  <rect x="70" y="70" width="460" height="40" rx="4" fill="#4b5563"/>
+  <rect x="90" y="85" width="80" height="10" rx="2" fill="#6b7280"/>
+  <rect x="200" y="85" width="60" height="10" rx="2" fill="#6b7280"/>
+  <rect x="280" y="85" width="60" height="10" rx="2" fill="#6b7280"/>
+  <rect x="360" y="85" width="60" height="10" rx="2" fill="#6b7280"/>
+  <rect x="440" y="85" width="60" height="10" rx="2" fill="#6b7280"/>
+  
+  <!-- Product Grid -->
+  <rect x="70" y="130" width="140" height="180" rx="4" fill="#4b5563"/>
+  <rect x="85" y="145" width="110" height="80" rx="2" fill="#6b7280"/>
+  <rect x="85" y="235" width="110" height="8" rx="2" fill="#9ca3af"/>
+  <rect x="85" y="250" width="70" height="8" rx="2" fill="#9ca3af"/>
+  <rect x="85" y="265" width="50" height="8" rx="2" fill="#9ca3af"/>
+  <rect x="85" y="285" width="60" height="20" rx="2" fill="#10b981"/>
+  
+  <rect x="230" y="130" width="140" height="180" rx="4" fill="#4b5563"/>
+  <rect x="245" y="145" width="110" height="80" rx="2" fill="#6b7280"/>
+  <rect x="245" y="235" width="110" height="8" rx="2" fill="#9ca3af"/>
+  <rect x="245" y="250" width="70" height="8" rx="2" fill="#9ca3af"/>
+  <rect x="245" y="265" width="50" height="8" rx="2" fill="#9ca3af"/>
+  <rect x="245" y="285" width="60" height="20" rx="2" fill="#10b981"/>
+  
+  <rect x="390" y="130" width="140" height="180" rx="4" fill="#4b5563"/>
+  <rect x="405" y="145" width="110" height="80" rx="2" fill="#6b7280"/>
+  <rect x="405" y="235" width="110" height="8" rx="2" fill="#9ca3af"/>
+  <rect x="405" y="250" width="70" height="8" rx="2" fill="#9ca3af"/>
+  <rect x="405" y="265" width="50" height="8" rx="2" fill="#9ca3af"/>
+  <rect x="405" y="285" width="60" height="20" rx="2" fill="#10b981"/>
+  
+  <!-- Shopping Cart Icon -->
+  <circle cx="520" cy="90" r="15" fill="#10b981"/>
+  <rect x="515" y="85" width="10" height="10" rx="2" fill="white"/>
+  <rect x="517" y="87" width="6" height="6" rx="1" fill="#10b981"/>
+  
+  <!-- Title -->
+  <text x="300" y="25" text-anchor="middle" fill="#f3f4f6" font-family="Arial, sans-serif" font-size="16" font-weight="bold">SystemsLimited E-commerce</text>
+</svg>

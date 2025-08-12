@@ -10,7 +10,7 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "Project Manager",
     company: "TrustNexus",
-    content: "Muhammad Ali demonstrated exceptional technical skills and attention to detail. His React components were consistently high-quality and his collaborative approach made him a valuable team member.",
+    content: "Muhammad Ali demonstrated exceptional technical skills while working on the NEXI Robot project. His React components were consistently high-quality and his collaborative approach made him a valuable team member. He delivered the super admin dashboard on time with excellent user experience.",
     rating: 5,
     avatar: "👩‍💼"
   },
@@ -19,7 +19,7 @@ const testimonials = [
     name: "David Chen",
     role: "Senior Developer",
     company: "TechCorp",
-    content: "Working with Muhammad Ali was a great experience. His problem-solving abilities and clean code practices significantly improved our project's performance and maintainability.",
+    content: "Working with Muhammad Ali on web development projects was a great experience. His problem-solving abilities and clean code practices significantly improved our project's performance and maintainability. His attention to detail in UI/UX is outstanding.",
     rating: 5,
     avatar: "👨‍💻"
   },
@@ -28,7 +28,7 @@ const testimonials = [
     name: "Emily Rodriguez",
     role: "UX Designer",
     company: "Design Studio",
-    content: "Muhammad Ali's understanding of both frontend and backend development made him an excellent collaborator. He always delivered pixel-perfect implementations.",
+    content: "Muhammad Ali's understanding of both frontend development and user experience made him an excellent collaborator. He always delivered pixel-perfect implementations and was great at translating design requirements into functional code.",
     rating: 5,
     avatar: "👩‍🎨"
   }

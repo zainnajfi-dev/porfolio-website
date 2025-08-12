@@ -9,14 +9,19 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 border-2 border-blue-500 rounded-xl flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900">
-                <div className="text-center">
-                  <div className="text-sm font-bold gradient-text leading-none">MAZ</div>
-                  <div className="text-xs text-gray-400 leading-none">DEV</div>
+              <div className="relative w-10 h-10">
+                <div className="w-full h-full bg-gradient-to-br from-emerald-500 via-cyan-500 to-blue-600 rounded-xl shadow-lg relative overflow-hidden">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-5 h-5 relative">
+                      <div className="absolute top-0 left-0 w-5 h-0.5 bg-white rounded-full" />
+                      <div className="absolute top-1/2 left-0 w-5 h-0.5 bg-white rounded-full transform -translate-y-1/2 rotate-45 origin-left" />
+                      <div className="absolute bottom-0 left-0 w-5 h-0.5 bg-white rounded-full" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div>
-                <div className="font-bold text-lg text-white">Muhammad Ali Zain</div>
+                <div className="font-bold text-lg text-white">ZAIN</div>
                 <div className="text-sm text-gray-400">Full Stack Developer</div>
               </div>
             </div>

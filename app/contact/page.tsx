@@ -34,25 +34,33 @@ export default function ContactPage() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
-      const isSuccess = Math.random() > 0.3
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
 
-      if (isSuccess) {
+      if (response.ok) {
         toast({
           title: "Message Sent Successfully!",
           description: "Thanks! Your message has been sent. I'll get back to you within 24 hours.",
         })
         setFormData({ name: "", email: "", subject: "", message: "" })
       } else {
-        toast({
-          title: "Oops! Something went wrong.",
-          description: "Please try again later or contact me directly via email at zainalinajfi@gmail.com",
-          variant: "destructive",
-        })
+        throw new Error('Failed to send message')
       }
+    } catch (error) {
+      toast({
+        title: "Oops! Something went wrong.",
+        description: "Please try again later or contact me directly via email at zainalinajfi@gmail.com",
+        variant: "destructive",
+      })
+    } finally {
       setIsSubmitting(false)
-    }, 2000)
+    }
   }
 
   const contactInfo = [
@@ -61,21 +69,21 @@ export default function ContactPage() {
       label: "Email",
       value: "zainalinajfi@gmail.com",
       href: "mailto:zainalinajfi@gmail.com",
-      color: "text-blue-400",
+      color: "text-emerald-400",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+92 322 0748472",
-      href: "tel:+923220748472",
-      color: "text-green-400",
+      value: "+92 300 1234567",
+      href: "tel:+923001234567",
+      color: "text-emerald-400",
     },
     {
       icon: MapPin,
       label: "Location",
       value: "Islamabad, Pakistan",
       href: "#",
-      color: "text-purple-400",
+      color: "text-emerald-400",
     },
   ]
 
@@ -143,7 +151,7 @@ export default function ContactPage() {
                           required
                           value={formData.name}
                           onChange={handleInputChange}
-                          className="bg-gray-700/50 border-gray-600 text-white focus:border-blue-400 focus:ring-blue-400/20 rounded-xl h-12"
+                          className="bg-gray-700/50 border-gray-600 text-white focus:border-emerald-400 focus:ring-emerald-400/20 rounded-xl h-12"
                           placeholder="Your full name"
                         />
                       </div>
@@ -158,7 +166,7 @@ export default function ContactPage() {
                           required
                           value={formData.email}
                           onChange={handleInputChange}
-                          className="bg-gray-700/50 border-gray-600 text-white focus:border-blue-400 focus:ring-blue-400/20 rounded-xl h-12"
+                          className="bg-gray-700/50 border-gray-600 text-white focus:border-emerald-400 focus:ring-emerald-400/20 rounded-xl h-12"
                           placeholder="your.email@example.com"
                         />
                       </div>
@@ -175,7 +183,7 @@ export default function ContactPage() {
                         required
                         value={formData.subject}
                         onChange={handleInputChange}
-                        className="bg-gray-700/50 border-gray-600 text-white focus:border-blue-400 focus:ring-blue-400/20 rounded-xl h-12"
+                        className="bg-gray-700/50 border-gray-600 text-white focus:border-emerald-400 focus:ring-emerald-400/20 rounded-xl h-12"
                         placeholder="What's this about?"
                       />
                     </div>
@@ -191,7 +199,7 @@ export default function ContactPage() {
                         rows={6}
                         value={formData.message}
                         onChange={handleInputChange}
-                        className="bg-gray-700/50 border-gray-600 text-white focus:border-blue-400 focus:ring-blue-400/20 resize-none rounded-xl"
+                        className="bg-gray-700/50 border-gray-600 text-white focus:border-emerald-400 focus:ring-emerald-400/20 resize-none rounded-xl"
                         placeholder="Tell me about your project or inquiry..."
                       />
                     </div>
@@ -199,7 +207,7 @@ export default function ContactPage() {
                     <Button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 disabled:opacity-50 h-14 rounded-xl text-lg font-medium"
+                      className="w-full bg-gradient-to-r from-emerald-600 to-cyan-600 hover:from-emerald-700 hover:to-cyan-700 disabled:opacity-50 h-14 rounded-xl text-lg font-medium"
                       size="lg"
                     >
                       {isSubmitting ? (
@@ -246,7 +254,7 @@ export default function ContactPage() {
                         {info.href !== "#" ? (
                           <a
                             href={info.href}
-                            className="text-white hover:text-blue-400 transition-colors font-medium"
+                            className="text-white hover:text-emerald-400 transition-colors font-medium"
                             target={info.href.startsWith("http") ? "_blank" : undefined}
                             rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
                           >
@@ -284,11 +292,11 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border-blue-500/30 backdrop-blur-sm shadow-xl">
+              <Card className="bg-gradient-to-r from-emerald-600/20 to-cyan-600/20 border-emerald-500/30 backdrop-blur-sm shadow-xl">
                 <CardContent className="p-8">
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-green-400/20 rounded-xl">
-                      <CheckCircle className="w-8 h-8 text-green-400 flex-shrink-0" />
+                    <div className="p-3 bg-emerald-400/20 rounded-xl">
+                      <CheckCircle className="w-8 h-8 text-emerald-400 flex-shrink-0" />
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-white mb-3">Available for Projects</h3>

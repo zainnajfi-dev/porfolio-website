@@ -4,7 +4,6 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { BrandLoader } from "@/components/brand-loader"
 import { AnimatedBackground } from "@/components/animated-background"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { Toaster } from "@/components/ui/toaster"
@@ -12,11 +11,11 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Muhammad Ali Zain Ul Abidin - Full Stack Developer",
+  title: "Muhammad Ali Zain Ul Abidin - Software Engineer & Full Stack Developer",
   description:
-    "Full Stack Developer specializing in React, Node.js, Flutter, and AI/ML technologies. Bridging Design and Functionality with Modern Web Technologies.",
-  keywords: "Full Stack Developer, React, Next.js, Flutter, Node.js, Web Development, Mobile Development, AI, ML",
-    generator: 'v0.dev'
+    "Software Engineering graduate from COMSATS University, specializing in React.js, TypeScript, and modern web technologies. Building scalable applications with a focus on user experience.",
+  keywords: "Software Engineer, Full Stack Developer, React.js, TypeScript, Node.js, Web Development, COMSATS University",
+  generator: 'Next.js'
 }
 
 export default function RootLayout({
@@ -26,11 +25,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} min-h-screen`}>
+      <body className={`${inter.className} min-h-screen bg-background`}>
         <AnimatedBackground />
-        <BrandLoader />
         <Navigation />
-        <main className="relative z-10 pt-16">{children}</main>
+        <main className="relative z-10 pt-20">{children}</main>
         <Footer />
         <ScrollToTop />
         <Toaster />
