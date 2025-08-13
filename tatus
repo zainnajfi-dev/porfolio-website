@@ -1,0 +1,105 @@
+[1mdiff --git a/app/projects/page.tsx b/app/projects/page.tsx[m
+[1mindex 85f97e5..3ec9f37 100644[m
+[1m--- a/app/projects/page.tsx[m
+[1m+++ b/app/projects/page.tsx[m
+[36m@@ -11,15 +11,15 @@[m [mimport Image from "next/image"[m
+ const projects = [[m
+   {[m
+     id: 1,[m
+[31m-    title: "MedSpark Healthcare",[m
+[32m+[m[32m    title: "MedSpark Pre-Medical College",[m
+     description: "A comprehensive healthcare management system with patient records, appointment scheduling, and medical inventory tracking. Features a modern dashboard with real-time analytics and secure data management.",[m
+     image: "/medspark-project.svg",[m
+     technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],[m
+[31m-    liveUrl: "https://medspark-healthcare.vercel.app",[m
+[31m-    githubUrl: "https://github.com/yourusername/medspark",[m
+[32m+[m[32m    liveUrl: "https://meds-spark.vercel.app/",[m
+[32m+[m[32m    githubUrl: "https://github.com/zainnajfi-dev/MedsSpark",[m
+     status: "Live",[m
+[31m-    year: "2024",[m
+[31m-    category: "Healthcare",[m
+[32m+[m[32m    year: "2025",[m
+[32m+[m[32m    category: "Education",[m
+     features: ["Patient Management", "Appointment Scheduling", "Inventory Tracking", "Analytics Dashboard", "Secure Authentication"],[m
+     highlights: ["Full-stack application", "Real-time updates", "Responsive design", "Admin dashboard"][m
+   },[m
+[36m@@ -29,10 +29,10 @@[m [mconst projects = [[m
+     description: "A social platform for developers to connect, share projects, and collaborate. Features include user profiles, project showcases, real-time messaging, and community forums.",[m
+     image: "/devconnect-project.svg",[m
+     technologies: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "Framer Motion"],[m
+[31m-    liveUrl: "https://devconnect-social.vercel.app",[m
+[31m-    githubUrl: "https://github.com/yourusername/devconnect",[m
+[32m+[m[32m    liveUrl: "https://devconnect-platform-mu.vercel.app/",[m
+[32m+[m[32m    githubUrl: "https://github.com/zainnajfi-dev/devconnect-platform",[m
+     status: "Live",[m
+[31m-    year: "2024",[m
+[32m+[m[32m    year: "2023",[m
+     category: "Social Network",[m
+     features: ["User Profiles", "Project Showcase", "Real-time Chat", "Community Forums", "Social Networking"],[m
+     highlights: ["Real-time messaging", "User authentication", "Project sharing", "Community features"][m
+[36m@@ -43,8 +43,8 @@[m [mconst projects = [[m
+     description: "A modern e-commerce platform clone with advanced product management, shopping cart functionality, and secure payment processing. Features responsive design and admin dashboard.",[m
+     image: "/systemslimited-clone.svg",[m
+     technologies: ["React.js", "Redux", "Node.js", "MongoDB", "Stripe API"],[m
+[31m-    liveUrl: "https://systemslimited-clone.vercel.app",[m
+[31m-    githubUrl: "https://github.com/yourusername/systemslimited-clone",[m
+[32m+[m[32m    liveUrl: "https://systems-ltd-clone.vercel.app/",[m
+[32m+[m[32m    githubUrl: "https://github.com/zainnajfi-dev/systems-ltd-clone",[m
+     status: "Live",[m
+     year: "2024",[m
+     category: "E-commerce",[m
+[36m@@ -56,12 +56,12 @@[m [mconst projects = [[m
+     title: "ConstructCraft Management",[m
+     description: "A construction management platform for project planning, resource allocation, and progress tracking. Features include Gantt charts, team collaboration, and document management.",[m
+     image: "/constructcraft.svg",[m
+[31m-    technologies: ["React.js", "TypeScript", "Node.js", "PostgreSQL", "Chart.js"],[m
+[31m-    liveUrl: "https://constructcraft.vercel.app",[m
+[31m-    githubUrl: "https://github.com/yourusername/constructcraft",[m
+[31m-    status: "Live",[m
+[31m-    year: "2024",[m
+[31m-    category: "Project Management",[m
+[32m+[m[32m    technologies: ["Flutter", "Dart", "Firebase", "Chart.js"],[m
+[32m+[m[32m    liveUrl: "#",[m
+[32m+[m[32m    githubUrl: "https://github.com/zainnajfi-dev",[m
+[32m+[m[32m    status: "In Progress",[m
+[32m+[m[32m    year: "2024-2025",[m
+[32m+[m[32m    category: "Construction Project Management",[m
+     features: ["Project Planning", "Resource Management", "Progress Tracking", "Team Collaboration", "Document Management"],[m
+     highlights: ["Project tracking", "Resource allocation", "Team collaboration", "Document management"][m
+   },[m
+[36m@@ -74,7 +74,7 @@[m [mconst projects = [[m
+     liveUrl: "#",[m
+     githubUrl: "#",[m
+     status: "Demo",[m
+[31m-    year: "2024",[m
+[32m+[m[32m    year: "2025",[m
+     category: "Productivity",[m
+     features: ["Kanban Boards", "Time Tracking", "Team Collaboration", "Progress Analytics", "Custom Workflows"],[m
+     highlights: ["Drag & drop interface", "Time tracking", "Team collaboration", "Progress analytics"][m
+[36m@@ -88,7 +88,7 @@[m [mconst projects = [[m
+     liveUrl: "#",[m
+     githubUrl: "#",[m
+     status: "Demo",[m
+[31m-    year: "2024",[m
+[32m+[m[32m    year: "2025",[m
+     category: "Weather",[m
+     features: ["Real-time Weather", "7-day Forecast", "Interactive Maps", "Weather Alerts", "Historical Data"],[m
+     highlights: ["Real-time data", "Interactive maps", "Weather alerts", "Data visualization"][m
+[36m@@ -102,7 +102,7 @@[m [mconst projects = [[m
+     liveUrl: "#",[m
+     githubUrl: "#",[m
+     status: "Demo",[m
+[31m-    year: "2024",[m
+[32m+[m[32m    year: "2025",[m
+     category: "Finance",[m
+     features: ["Expense Tracking", "Budget Planning", "Financial Analytics", "Multiple Accounts", "Investment Tracking"],[m
+     highlights: ["Expense tracking", "Budget planning", "Financial analytics", "Investment tracking"][m
+[36m@@ -116,7 +116,7 @@[m [mconst projects = [[m
+     liveUrl: "#",[m
+     githubUrl: "#",[m
+     status: "Demo",[m
+[31m-    year: "2024",[m
+[32m+[m[32m    year: "2025",[m
+     category: "Food & Recipe",[m
+     features: ["Recipe Discovery", "Meal Planning", "Nutritional Info", "Shopping Lists", "User Content"],[m
+     highlights: ["Recipe discovery", "Meal planning", "Nutritional info", "Shopping lists"][m
