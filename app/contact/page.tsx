@@ -74,8 +74,8 @@ export default function ContactPage() {
     {
       icon: Phone,
       label: "Phone",
-      value: "+92 300 1234567",
-      href: "tel:+923001234567",
+      value: "+92 322 0748472",
+      href: "tel:+923220748472",
       color: "text-emerald-400",
     },
     {

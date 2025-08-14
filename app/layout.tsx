@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Muhammad Ali Zain Ul Abidin - Software Engineer & Full Stack Developer",
   description:
-    "Software Engineering graduate from COMSATS University, specializing in React.js, TypeScript, and modern web technologies. Building scalable applications with a focus on user experience.",
+    "Software Engineering graduate from COMSATS University, specializing in React.js, TypeScript, Express.js, Node.js, and modern web technologies. Building scalable applications with a focus on user experience.",
   keywords: "Software Engineer, Full Stack Developer, React.js, TypeScript, Node.js, Web Development, COMSATS University",
   generator: 'Next.js'
 }

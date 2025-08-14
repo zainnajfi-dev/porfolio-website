@@ -62,7 +62,7 @@ export function Navigation() {
             </div>
             
             <div>
-              <div className="font-bold text-lg text-white group-hover:text-emerald-400 transition-colors duration-300">ZAIN</div>
+              <div className="font-bold text-lg text-white group-hover:text-emerald-400 transition-colors duration-300">Muhammad Ali Zain</div>
               <div className="text-xs text-gray-400 -mt-1">Software Engineer</div>
             </div>
           </Link>

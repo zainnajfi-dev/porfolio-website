@@ -70,6 +70,42 @@ const tools = [
     color: "from-emerald-500 to-teal-600"
   },
   {
+    name: "Firebase Studio",
+    description: "Database Management & Analytics",
+    icon: Database,
+    color: "from-orange-500 to-yellow-600"
+  },
+  {
+    name: "Blackbox",
+    description: "AI Code Search & Assistant",
+    icon: Zap,
+    color: "from-gray-800 to-gray-900"
+  },
+  {
+    name: "Qwen",
+    description: "AI Code Generation & Analysis",
+    icon: Code,
+    color: "from-blue-600 to-indigo-600"
+  },
+  {
+    name: "Manus",
+    description: "AI-Powered Code Review",
+    icon: Monitor,
+    color: "from-green-500 to-emerald-600"
+  },
+  {
+    name: "Bolt",
+    description: "Rapid Prototyping Tool",
+    icon: Zap,
+    color: "from-purple-600 to-violet-600"
+  },
+  {
+    name: "Framer",
+    description: "Design & Prototyping Platform",
+    icon: Settings,
+    color: "from-pink-500 to-red-600"
+  },
+  {
     name: "Figma",
     description: "Design & Prototyping",
     icon: Settings,

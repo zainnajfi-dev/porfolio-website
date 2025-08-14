@@ -281,7 +281,7 @@ export default function ExperiencePage() {
             <div className="glass-card rounded-3xl p-12 shadow-2xl">
               <h3 className="text-2xl font-bold mb-4 gradient-text">Ready for New Opportunities</h3>
               <p className="text-gray-200 text-lg mb-6 leading-relaxed">
-                I'm actively seeking full-time opportunities where I can contribute my skills in frontend development,
+                I'm actively seeking full-time onsite/remote opportunities where I can contribute my skills in frontend development,
                 full-stack solutions, and collaborative team environments. Passionate about building scalable applications
                 and creating exceptional user experiences.
               </p>

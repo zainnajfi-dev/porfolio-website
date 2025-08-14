@@ -21,7 +21,7 @@ export function Footer() {
                 </div>
               </div>
               <div>
-                <div className="font-bold text-lg text-white">ZAIN</div>
+                <div className="font-bold text-lg text-white">Muhammad Ali Zain</div>
                 <div className="text-sm text-gray-400">Full Stack Developer</div>
               </div>
             </div>
